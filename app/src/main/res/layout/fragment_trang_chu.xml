@@ -21,6 +21,21 @@
             android:name="com.example.appnghenhac.fragment.Fragment_Playlist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+        <fragment
+            android:id="@+id/fragmentchudetheloai"
+            android:name="com.example.appnghenhac.fragment.Fragment_ChuDe_TheLoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:name="com.example.appnghenhac.fragment.Fragment_Album_Hot"
+            android:id="@+id/fragmentalbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:name="com.example.appnghenhac.fragment.Fragment_Bai_Hat"
+            android:id="@+id/fragmentbaihathot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 

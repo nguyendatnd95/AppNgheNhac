@@ -1,16 +1,19 @@
 package com.example.appnghenhac.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.example.appnghenhac.R;
+import com.example.appnghenhac.activity.DanhSachBaiHatActivity;
 import com.example.appnghenhac.model.QuangCao;
 import com.squareup.picasso.Picasso;
 
@@ -53,6 +56,15 @@ public class BannerAdapter extends PagerAdapter {
 
         //add vào viewpager
         container.addView(view);
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, DanhSachBaiHatActivity.class);
+                intent.putExtra("banner",arrayListBanner.get(position));
+                context.startActivity(intent);
+            }
+        });
 
         return view;
     }
